@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta= charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portifolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            
+        </nav>
+        <div class="body-header">
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Karuna</span><br>Runjula From India</h1>
+            </div>
+            <div class="header-img">
+                <img src ="images/phone-background.png">
+            </div>
+        
+        
+        </div>
+    </div>
+</div> 
+
+
+<!-------About-------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Karuna.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a recent graduate and aspiring web development enthusiast, 
+                    I have gained hands-on experience through projects and internships 
+                    in web development, specializing in creating responsive web pages. 
+                    Proficient in Python programming, I have successfully completed 
+                    data science projects. Eager to contribute to dynamic teams, 
+                    I am committed to learning and making meaningful contributions 
+                    as I advance in my career.
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>  
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, Java (Advanced); JavaScript (Intermediate); C (Novice)</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, React.js, Node.js, Django</li>
+                        <li><span>Databases</span><br>MySQL, MongoDB</li>
+                        <li><span>Version Control</span><br>Git</li>
+                        <li><span>Others</span><br>Linux, Windows, AWS services, SDLC, REST APIs</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024</span><br>Recent Graduate in Computer Science Engineering</li>
+                        <li><span>2023</span><br>Front-End Development Intern at Oasis Infobytes</li>
+                        <li><span>2023</span><br>Front-End Development Intern at Endunet Foundation</li>
+                        <li><span>2023</span><br>Full Stack Developer for 'RkElegance' E-commerce Website</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>B.Tech in Computer Science Engineering from Rajiv Gandhi University of Knowledge and Technologies, IIIT Srikakulam<br>Percentage: 80.6%</li>
+                        <li><span>2018 - 2020</span><br>Pre-University Course, MPC from Rajiv Gandhi University of Knowledge and Technologies, IIIT Srikakulam<br>Percentage: 85.3%</li>
+                        <li><span>2018</span><br>SSC from Kasturba Gandhi Balika Vidyalaya<br>Percentage: 98%</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li>Full Stack Web Development</li>
+                        <li>Python Programming</li>
+                        <li>Java Programming</li>
+                        <li>Data Science with Python</li>
+                        <li>Cloud Computing</li>
+                        <li>Django Essentials</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Specializing in creating responsive and dynamic web applications using HTML, CSS, JavaScript, and frameworks like React.js and Node.js. I focus on delivering seamless user experiences and effective solutions for diverse web needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-paint-brush"></i>
+                <h2>UI/UX Design</h2>
+                <p>Expert in designing intuitive and visually appealing web and app interfaces. I ensure that the design is user-friendly and aligns with the latest trends in UI/UX principles, creating a pleasant user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>Experience in developing and designing both Android and iOS applications. I focus on building functional, user-friendly mobile apps that deliver an excellent user experience across various devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>lore, doloe dir sw s,jwewkje sadjajdjad .qww ssd wwww,
+                    sagddg ewegqgwg sgsgfsva sfasf sffqf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>lore, doloe dir sw s,jwewkje sadjajdjad .qww ssd wwww,
+                    sagddg ewegqgwg sgsgfsva sfasf sffqf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>lore, doloe dir sw s,jwewkje sadjajdjad .qww ssd wwww,
+                    sagddg ewegqgwg sgsgfsva sfasf sffqf.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>---->
+
+<!----------portfolio--------------->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="E-Commerce Website">
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                    <p>A fully responsive e-commerce website developed from scratch, featuring a seamless shopping experience with a dynamic cart and chatbot support.</p>
+                    <a href="https://www.linkedin.com/posts/karuna-runjula-491170273_ecommerce-webdevelopment-responsivedesign-activity-7110200691549224960-_rWV?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Portfolio Website">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio showcasing my skills and projects, designed with a focus on responsive design and user-friendly navigation.</p>
+                    <a href="https://github.com/karunarunjula7/Personal_Portifolio"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="IoT-Based Aquatic Resource Management System">
+                <div class="layer">
+                    <h3>IoT-Based Aquatic Resource Management System</h3>
+                    <p>An innovative system using IoT to monitor and manage aquatic resources, optimizing feeding schedules and ensuring water quality.</p>
+                    <a href="https://github.com/karunarunjula7/IoT_Based_Aquatic_Resource_management"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rkarunakumari32@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9010297656</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/karuna-runjula-491170273/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/Karuna Kumari Runjula.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messages"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Karuna. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCKNiZDhWjRgEHertelgLFZbX6lc8ib904HQwI1Au_7FBpTAnitCESjQSEqRmSR_Q9Uw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
